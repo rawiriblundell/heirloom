@@ -325,7 +325,7 @@ compute_checksum(int *r_cksumerr, char *a_path)
 		lg += (((int)(z>>16)&0xFF) & WDMSK);
 		lg += (((int)(z>>8)&0xFF) & WDMSK);
 		lg += (((int)(z)&0xFF) & WDMSK);
-		ucp += sizeof (unsigned long);
+		ucp += 4;
 	}
 
 	/* add up bytes of remaining partial quad-word at end of file */
