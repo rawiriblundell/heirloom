@@ -31,27 +31,33 @@ for Pkg in build-essential libncurses5-dev ed bison libssl-dev; do
 done
 
 # Next, we start milling through each directory in order
+# Running each in a subshell
+(
 cd heirloom-sh || exit 1
 make && make install
-cd -
+)
 
-cd heirloom-devtools
+(
+cd heirloom-devtools || exit 1
 make && make install
-cd -
+)
 
-cd heirloom
+(
+cd heirloom || exit 1
 make && make install
-cd -
+)
 
-cd heirloom-pkgtools
+(
+cd heirloom-pkgtools || exit 1
 make && make install
-cd -
+)
 
-cd heirloom-doctools
+(
+cd heirloom-doctools || exit 1
 make && make install
-cd -
+)
 
-read -d '' Fun << EOF
+read -rd '' Fun << EOF
                              M  ..M.                                            
                            .~.   ..M.        . I  ~ .                           
                             8.    ...        M..  .D..                          
