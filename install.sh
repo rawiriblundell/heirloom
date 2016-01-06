@@ -26,7 +26,7 @@ fi
 # Do we have the packages we need?
 for Pkg in build-essential libncurses5-dev ed bison libssl-dev; do
   if ! dpkg -s "${Pkg}" &>/dev/null; then
-    apt-get install -y "${Pkg}"
+    apt-get -y install "${Pkg}"
   fi
 done
 
