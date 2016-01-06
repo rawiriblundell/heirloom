@@ -39,22 +39,26 @@ make && make install
 
 (
 cd heirloom-devtools || exit 1
-make SHELL=/opt/heirloom/bin/sh && make install
+make SHELL=/opt/heirloom/bin/sh
+make install SHELL=/opt/heirloom/bin/sh
 )
 
 (
 cd heirloom || exit 1
-make SHELL=/opt/heirloom/bin/sh && make install
+make SHELL=/opt/heirloom/bin/sh
+make install SHELL=/opt/heirloom/bin/sh
 )
 
 (
 cd heirloom-pkgtools || exit 1
-make SHELL=/opt/heirloom/bin/sh && make install
+make SHELL=/opt/heirloom/bin/sh
+make install SHELL=/opt/heirloom/bin/sh
 )
 
 (
 cd heirloom-doctools || exit 1
-make SHELL=/opt/heirloom/bin/sh && make install
+make SHELL=/opt/heirloom/bin/sh
+make install SHELL=/opt/heirloom/bin/sh
 )
 
 read -rd '' Fun << EOF
