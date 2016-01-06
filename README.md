@@ -28,11 +28,16 @@ These may also be useful:
 * `zlib1g-dev` or some other package(s) similar to `libz` plus `libbz2`
 
 ### Order of compilation
-The tools must be built in this order:
+The tools must be built in this order, after setting your `PATH` like so:
+
+`PATH=$PATH:/opt/heirloom/bin`
+`export PATH`
 
 * shell
 * devtools
+* toolchest
 * pkgtools
+* doctools (optional, requires devtools)
 
 ### Tips
 If you get an error about inability to find `/sbin/sh` it means I possibly missed something.  You can work around it by declaring the shell like so:
