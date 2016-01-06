@@ -5,6 +5,8 @@ This fork configures `heirloom` and its tools and files to reside in `/opt/heirl
 
 * fix the cpio command lines in libpkg/pkgtrans.c lines 1151, 1164, 1595 and 1827 to remove the "-D"
 
+The existence of the "-D" argument for `cpio` causes `pkgtrans` to fail, as the `heirloom` version of `cpio` does not seem to have "-D" as an available argument.  It seems to have at some point been added, and at another point removed.
+
 Ultimately I want to be able to use `fpm` on Debian to build Solaris packages.  For that, I need the `heirloom` pkgtools, and for that, I need the rest of the `heirloom` suite.  It was a pain in the ass to manually compile this on Debian, to the point that I considered finding some RPM's and throwing them at `alien`.
 
 Now that this is building, however, I can (ironically?) build deb packages of `heirloom` with `fpm`.
