@@ -30,7 +30,7 @@ These may also be useful:
 ### Order of compilation
 The tools must be built in this order, after setting your `PATH` like so:
 
-`PATH=$PATH:/opt/heirloom/bin`
+`PATH=$PATH:/opt/heirloom/bin`  
 `export PATH`
 
 * shell
@@ -54,6 +54,8 @@ ARISING FROM THE USE OF THIS SOFTWARE.
 
 If you fork this repository:
 Please respect and keep the original licence(s) and copyright(s).
+
+---
 
 ### Original heirloom documentation
 
