@@ -34,31 +34,32 @@ done
 # Running each in a subshell
 (
 cd heirloom-sh || exit 1
-make && make install
+make
+make install
 )
 
 (
 cd heirloom-devtools || exit 1
-make SHELL=/opt/heirloom/bin/sh
-make install SHELL=/opt/heirloom/bin/sh
+make
+make install
 )
 
 (
 cd heirloom || exit 1
-make SHELL=/opt/heirloom/bin/sh
-make install SHELL=/opt/heirloom/bin/sh
+make
+make install
 )
 
 (
 cd heirloom-pkgtools || exit 1
-make SHELL=/opt/heirloom/bin/sh
-make install SHELL=/opt/heirloom/bin/sh
+make
+make install
 )
 
 (
 cd heirloom-doctools || exit 1
-make SHELL=/opt/heirloom/bin/sh
-make install SHELL=/opt/heirloom/bin/sh
+make
+make install
 )
 
 read -rd '' Fun << EOF
