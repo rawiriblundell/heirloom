@@ -1,7 +1,9 @@
 # heirloom
 Personal fork of `heirloom` tools for Debian and Effing Package Manager (FPM)
 
-This fork configures `heirloom` and its tools and files to reside in `/opt/heirloom`.  It also implements a couple of fixes from https://www.virtualbox.org/wiki/SolarisCrossCompiler.
+This fork configures `heirloom` and its tools and files to reside in `/opt/heirloom`.  It also implements a couple of fixes from https://www.virtualbox.org/wiki/SolarisCrossCompiler.  The most important one (to me) being:
+
+* fix the cpio command lines in libpkg/pkgtrans.c lines 1151, 1164, 1595 and 1827 to remove the "-D"
 
 Ultimately I want to be able to use `fpm` on Debian to build Solaris packages.  For that, I need the `heirloom` pkgtools, and for that, I need the rest of the `heirloom` suite.  It was a pain in the ass to manually compile this on Debian, to the point that I considered finding some RPM's and throwing them at `alien`.
 
