@@ -7,12 +7,12 @@ ROOT=
 #
 # The destination directory for the "sh" and "jsh" binaries.
 #
-SV3BIN=/usr/5bin
+SV3BIN=/opt/heirloom/bin
 
 #
 # Location for manual pages (with man1 below).
 #
-MANDIR=/usr/share/man/5man
+MANDIR=/opt/heirloom/usr/share/man/5man
 
 #
 # Enable this definition if spell checking should be done for the
@@ -23,7 +23,7 @@ SPELL=-DSPELL
 #
 # A BSD-compatible install command.
 #
-UCBINST=/usr/ucb/install
+UCBINST=/usr/bin/install
 
 #
 # The strip command that is used at installation time.
