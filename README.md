@@ -14,8 +14,8 @@ Now that this is building, however, I can (ironically?) build deb packages of `h
 ## Installing
 Clone the repo or download+extract the auto-generated zip.  Then simply:
 
-`chmod +x install.sh  
-./install.sh`
+`chmod +x install.sh`    
+`./install.sh`
 
 The install script is simple and stupid and doesn't cater for errors at all.  It will try to ensure your dependencies are installed, at least.
 
