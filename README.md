@@ -13,7 +13,7 @@ Now that this is building, however, I can (ironically?) build deb packages of `h
 
 ## Manually compiling
 ### Requirements
-These were built on a Debian 8.1 64 bit VM that was already in use for `fpm`, so it had packages already that may be pre-requisites.  I'm going to guess `build-essential` is one of them, the others listed here had to be installed specifically for compiling heirloom:
+These were built on a Debian 8.1 64 bit VM that was already in use for `fpm`, so it had packages already that may be pre-requisites.  I'm going to guess `build-essential` is one of them, the others listed here had to be installed specifically for compiling `heirloom`:
 
 * `build-essential`
 * `libncurses5-dev`
@@ -26,6 +26,8 @@ These may also be useful:
 * `gzip`
 * `bzip2`
 * `zlib1g-dev` or some other package(s) similar to `libz` plus `libbz2`
+
+The various `make` files refer to needing a BSD compatible `install`, the GNU one seems to work perfectly fine.  One is provided by `heirloom` but... chicken and the egg situation.
 
 ### Order of compilation
 The tools must be built in this order, after setting your `PATH` like so:
