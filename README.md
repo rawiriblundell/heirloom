@@ -21,7 +21,11 @@ These were built on a Debian 8.1 64 bit VM that was already in use for `fpm`, so
 * `bison`
 * `libssl-dev`
 
-`flex` may also be useful.
+These may also be useful:
+* `flex`
+* `gzip`
+* `bzip2`
+* `zlib1g-dev` or some other package(s) similar to `libz` plus `libbz2`
 
 ### Order of compilation
 The tools must be built in this order:
