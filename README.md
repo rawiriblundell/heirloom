@@ -43,11 +43,11 @@ The tools must be built in this order, after setting your `PATH` like so:
 `PATH=$PATH:/opt/heirloom/bin`  
 `export PATH`
 
-* shell
-* devtools
-* toolchest
-* pkgtools
-* doctools (optional, requires devtools)
+* heirloom-sh
+* heirloom-devtools
+* heirloom (also known as the heirloom toolchest)
+* heirloom-pkgtools
+* heirloom-doctools (optional, requires devtools)
 
 ### Tips
 If you get an error about inability to find `/sbin/sh` it means I possibly missed something.  You can work around it by declaring the shell like so:
@@ -55,7 +55,7 @@ If you get an error about inability to find `/sbin/sh` it means I possibly misse
 `make SHELL=/opt/heirloom/bin/sh`
 
 ## Legal stuff
-I have made no conscious licence violations, please notify me if I have.  Any changes that I have made are done so with the intent of remaining in accordance with, and in keeping the original licence(s) and copyright(s) of the changed files.  I am not attempting any relicencing etc conciously or not.
+I have made no conscious licence violations, please notify me if I have.  Any changes that I have made are done so with the intent of remaining in accordance with, and in keeping the original licence(s) and copyright(s) of the changed files.  I am not attempting any relicencing etc consciously or not.
 
 If you use this repository:
 THIS SOFTWARE IS PROVIDED 'AS-IS', WITHOUT ANY EXPRESS OR IMPLIED
