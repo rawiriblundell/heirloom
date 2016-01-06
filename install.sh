@@ -58,6 +58,7 @@ make && make install
 )
 
 read -rd '' Fun << EOF
+
                              M  ..M.                                            
                            .~.   ..M.        . I  ~ .                           
                             8.    ...        M..  .D..                          
@@ -110,4 +111,7 @@ EOF
 printf "%s\n" "${Fun}" \
 "" \
 "INFO: If you're seeing this message, then I've either completed successfully" \
-  "Or failed through well enough to get to this point.  High five the monitor."
+"  Or failed through well enough to get to this point.  High five the monitor." \
+"" \
+"Please set your PATH variable to:" \
+"$PATH"
