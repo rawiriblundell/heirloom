@@ -11,6 +11,14 @@ Ultimately I want to be able to use `fpm` on Debian to build Solaris packages.  
 
 Now that this is building, however, I can (ironically?) build deb packages of `heirloom` with `fpm`.
 
+## Installing
+Clone the repo or download+extract the auto-generated zip.  Then simply:
+
+`chmod +x install.sh  
+./install.sh`
+
+The install script is simple and stupid and doesn't cater for errors at all.  It will try to ensure your dependencies are installed, at least.
+
 ## Manually compiling
 ### Requirements
 These were built on a Debian 8.1 64 bit VM that was already in use for `fpm`, so it had packages already that may be pre-requisites.  I'm going to guess `build-essential` is one of them, the others listed here had to be installed specifically for compiling `heirloom`:
