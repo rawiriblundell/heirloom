@@ -13,7 +13,7 @@
 ################################################################################
 
 # First, set the PATH variable
-PATH=$PATH:/opt/heirloom/bin:/opt/heirloom/ccs/bin:/opt/heirloom/sbin
+PATH=$PATH:/opt/heirloom/bin:/opt/heirloom/sbin
 export PATH
 
 # Next, check dependencies
