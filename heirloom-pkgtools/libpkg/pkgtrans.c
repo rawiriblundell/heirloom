@@ -1010,7 +1010,7 @@ wdsheader(struct dm_buf *hdr, char *src, char *device, char **pkg, PKCS7 *sig)
 	 */
 	strcpy(tmp_file, template);
 	if (close(mkstemp(tmp_file)) < 0 ||	/* temporary file name */
-			(list_fd = open(tmp_file, O_RDWR | O_CREAT)) == -1) {
+		(list_fd = open(tmp_file, O_RDWR, O_CREAT)) == -1) {
 		progerr(pkg_gt(ERR_TRANSFER));
 		logerr(pkg_gt(MSG_NOTMPFIL));
 		return (1);
