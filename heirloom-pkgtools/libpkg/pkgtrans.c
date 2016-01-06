@@ -1148,7 +1148,7 @@ wdsheader(struct dm_buf *hdr, char *src, char *device, char **pkg, PKCS7 *sig)
 
 	if (!making_sig) {
 #ifndef SUNOS41
-		(void) sprintf(tmp_entry, "%s -ocD -C %d",
+		(void) sprintf(tmp_entry, "%s -oc -C %d",
 		    CPIOPROC, (int)BLK_SIZE);
 #else
 		(void) sprintf(tmp_entry, "%s -oc -C %d",
@@ -1161,7 +1161,7 @@ wdsheader(struct dm_buf *hdr, char *src, char *device, char **pkg, PKCS7 *sig)
 		 * the links themselves
 		 */
 #ifndef SUNOS41
-		(void) sprintf(tmp_entry, "%s -ocDL -C %d",
+		(void) sprintf(tmp_entry, "%s -ocL -C %d",
 		    CPIOPROC, (int)BLK_SIZE);
 #else
 		(void) sprintf(tmp_entry, "%s -ocL -C %d",
@@ -1592,7 +1592,7 @@ pkgxfer(char *srcinst, int options)
 		if (options & PT_ODTSTREAM) {
 #ifndef SUNOS41
 			(void) sprintf(cmd+strlen(cmd),
-			    " -print | %s -ocD -C %d",
+			    " -print | %s -oc -C %d",
 #else
 			(void) sprintf(cmd+strlen(cmd),
 			    " -print | %s -oc -C %d",
@@ -1824,7 +1824,7 @@ pkgdump(char *srcinst, BIO *bio)
 
 #ifndef SUNOS41
 		(void) sprintf(cmd+strlen(cmd),
-		    " -print | %s -ocD -C %d",
+		    " -print | %s -oc -C %d",
 #else
 		    (void) sprintf(cmd+strlen(cmd),
 			" -print | %s -oc -C %d",
