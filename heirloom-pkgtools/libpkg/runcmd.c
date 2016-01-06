@@ -177,7 +177,7 @@ esystem(char *cmd, int ifd, int ofd)
 
 		/* execute target executable */
 
-		execl("/sbin/sh", "/sbin/sh", "-c", cmd, NULL);
+		execl("/bin/sh", "/bin/sh", "-c", cmd, NULL);
 		progerr(pkg_gt("exec of <%s> failed, errno=%d"), cmd, errno);
 		_exit(99);
 	} else if (pid < 0) {
