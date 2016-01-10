@@ -2,6 +2,7 @@
 
 # Purpose: This script attempts to blindly compile heirloom
 #          and its related tools into /opt/heirloom
+#          My target use is Debian, you can adjust to suit your distro
 # Author:  Rawiri Blundell, 2015
 # Date:    20150106
 # Licence: WTFPL with the following disclaimer:
@@ -119,4 +120,6 @@ printf "%s\n" "${Fun}" \
 "  Or failed through well enough to get to this point.  High five the monitor." \
 "" \
 "Please set your PATH variable to:" \
-"$PATH"
+"$PATH" \
+"" \
+"Alternatively, you can symlink the heirloom tools into /usr/bin."
